@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculador de Trànsit a WhatsApp</title>
+
+  <!-- Optimitzacions de SEO -->
+  <meta name="description"
+    content="Envia automàticament la durada estimada del trajecte al teu WhatsApp amb redirecció directa.">
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Estils de càrrega minimalistes -->
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <main class="loader-container" id="main-content" aria-live="polite">
+    <div class="spinner" id="spinner" aria-label="Calculant el trajecte en cotxe"></div>
+    <h1 id="status-title">Consultant el trànsit...</h1>
+    <p id="status-desc">Esbrinant la durada de la ruta per obrir WhatsApp.</p>
+    <ul id="results-list" class="results-list" aria-live="polite"></ul>
+  </main>
+
+  <!-- Lògica de l'aplicació headless -->
+  <script src="app.js"></script>
+</body>
+
+</html>
